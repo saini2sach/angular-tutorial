@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
-})
+@Component({selector: 'app-home', templateUrl: './home.component.html', styleUrls: ['./home.component.scss']})
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  title = 'Angular Forms';
+  submenu = [
+    {
+      name: 'Model Form',
+      path: 'model'
+    }, {
+      name: 'Template Form',
+      path: 'template'
+    }
+  ];
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {} 
 
 }

@@ -1,0 +1,20 @@
+<h3>Template Driven Form</h3>
+<h4>Login Form</h4>
+
+<form #loginForm="ngForm" id="loginForm" (ngSubmit)="authenticate(loginForm)">
+    <div>
+      <label class="control-label">Username</label>
+      <input type="text" name="uname" class="form-control" ngModel required/>
+    </div>
+
+    <div>
+      <label class="control-label">Password</label>
+      <input type="password" name="pass" class="form-control" ngModel required/>
+    </div>
+
+    <div>
+      <input type="submit" class="btn btn-primary" value="Submit"/>
+      <input type="reset" class="btn btn-danger" value="Cancel"/>
+    </div>
+
+</form>

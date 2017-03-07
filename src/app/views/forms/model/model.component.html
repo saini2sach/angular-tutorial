@@ -1,0 +1,70 @@
+<h3>Model Driven Form</h3>
+<h4>Login Form</h4>
+
+<form [formGroup]="loginForm" id="loginForm" (ngSubmit)="login()" class="form-group">
+  <div>
+  <label for="username" class="control-label" >Username</label>
+  <input type="text" name="username" id="username" class="form-control" [formControl]="username">
+  </div>
+
+  <div>
+  <label for="password" class="control-label">Password</label>
+  <input type="password" name="password" id="password" class="form-control" [formControl]="password">
+  </div>
+
+  <div>
+  <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Submit</button>
+  <button type="reset" class="btn btn-danger">Cancel</button>
+  </div>
+</form>
+
+<!--
+<form [formGroup]="register" id="registerForm" (ngSubmit)="registerUser()">
+
+  <div>
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName" [formControl]="firstName">
+  </div>
+
+  <div>
+    <label for="secondName">Second Name</label>
+    <input type="text" name="secondName" id="secondName" [formControl]="secondName">
+  </div>
+
+   <div>
+    <label for="mail">Email</label>
+    <input type="email" name="mail" id="mail" [formControl]="mail">
+  </div>
+
+  <div>
+    <label for="phone">Mobile</label>
+    <input type="number" name="phone" id="phone" [formControl]="phone">
+  </div>
+
+  <div>
+    <label for="secondName">Gender</label>
+    <input type="radio" name="gender" value="male" /> Male
+    <input type="radio" name="gender" value="female"/> Female
+  </div>
+
+  <div>
+    <label for="secondName">Hobby</label>    
+    <input type="checkbox" name="Cricket" />
+    <input type="checkbox" name="Tennis" />
+    <input type="checkbox" name="Hockey" />    
+  </div>
+
+  <div>
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" [formControl]="password">
+  </div>
+
+
+  <div>
+  <input type="submit" value="Register">
+  <input type="reset" value="Cancel" />
+  </div>
+
+</form>
+-->
+<!--<p> Form value : {{form.value}}</p>-->
