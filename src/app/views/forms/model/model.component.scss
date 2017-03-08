@@ -6,6 +6,13 @@ input[type="reset"]{
     margin-left: 20px;
 }
 
+input.ng-invalid.ng-touched{
+    border-right: 10px solid red; 
+}
+input.ng-dirty.ng-touched{
+    border-right: 10px solid green; 
+}
+
 h3,h4{
     margin-left: 20px;
 }

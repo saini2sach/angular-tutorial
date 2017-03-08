@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  title = "Custom Pipes";
+  submenu = [{
+    name: 'Addition',
+    path: 'add'
+  },{
+    name: 'Subtraction',
+    path:'subtract'
+  }]
+
   constructor() { }
 
   ngOnInit() {
